@@ -1,0 +1,272 @@
+/* .parent-div {
+  width: 45%;
+  height: 8rem;
+  display: block;
+  margin: 3rem auto 3rem auto;
+  background-color: rgb(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+#su-title {
+  padding: 1rem 0 0.5rem 0;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #FFD700;
+}
+
+#su-input {
+  width: 60%;
+  height: 30%;
+  padding: 0.4rem;
+  margin: 0 1rem 0;
+  background-color:  rgb(255,255,255,0.9);
+  border: 5px solid #00000;
+  border-radius: 10px;
+  font-size: medium;
+  text-indent: 0.5rem;
+  color: rgb(0,0,0,0.75)
+}
+
+.search {
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  background-color: blueviolet;
+  height: 30%;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 5px;
+}
+
+.search:hover {
+  color: black;
+  background-color: lavender;
+  transform: scale(1.1);
+  border: 1px solid black;
+}
+
+.errormsg {
+  background-color: rgb(0,0,0,0.8);
+  width: 50%;
+  height: 5rem;
+  margin: auto;
+  border-radius: 10px;
+  color: red;
+  padding: 1rem;
+}
+
+.Initial {
+  width: 45%;
+  background-color: rgb(0,0,0,0.8);
+  color: lavender;
+  margin: auto;
+  border-radius: 10px;
+}
+.ErrState {
+  width: 45%;
+  background-color: rgb(0,0,0,0.8);
+  color: lavender;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+.ErrState h2 {
+  margin: 0;
+  color: orange;
+} */
+
+/* body-style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  margin: 0;
+  padding: 0;
+}
+
+.parent-div {
+  width: 100%;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#su-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #58a6ff;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#su-input {
+  flex: 1 1 60%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #21262d;
+  color: #e6edf3;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+#su-input::placeholder {
+  color: #8b949e;
+}
+
+#su-input:focus {
+  background-color: #30363d;
+}
+
+.search {
+  background-color: #238636;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search:hover {
+  background-color: #2ea043;
+  transform: scale(1.05);
+}
+
+/* Error Message Styling */
+.ErrState {
+  width: 100%;
+  max-width: 600px;
+  background-color: #161b22;
+  border: 1px solid #ff6a00;
+  color: #ffb347;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 106, 0, 0.2);
+  text-align: center;
+}
+
+.ErrState h2 {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+/* Initial message */
+.Initial {
+  width: 100%;
+  max-width: 600px;
+  background-color: #161b22;
+  color: #8b949e;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px dashed #30363d;
+}
+
+/* Optional: Smooth transitions for layout sections */
+.Initial,
+.ErrState {
+  transition: all 0.4s ease;
+}
+
+/* Shared card style */
+.card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Section header style */
+.card h2.section-title {
+  color: #58a6ff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.5rem;
+}
+
+/* Profile content layout */
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #30363d;
+}
+
+.profile-details {
+  flex: 1;
+  color: #c9d1d9;
+}
+
+.profile-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+/* Recent Actions list */
+.action-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.action-list li {
+  margin: 0.75rem 0;
+  color: #c9d1d9;
+  font-size: 0.95rem;
+  border-left: 4px solid #238636;
+  padding-left: 0.8rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Example in body-style.css */
+/* .parent-div {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+  padding: 1rem;
+} */
